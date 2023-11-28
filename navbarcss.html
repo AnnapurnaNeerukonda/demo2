@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .header {
+        background-color: aquamarine;
+        /* overflow: hidden; */
+       }
+       .nav ul li a{
+        text-decoration: none;
+        padding:1.5rem;
+       }
+       .nav ul{
+        list-style: none;
+        display:flex;
+       }
+       .nav{
+        display:grid;
+        grid-template-columns: 7fr 7fr;
+        align-items: right;
+        margin: auto;
+        width:25px;
+       }
+       .nav ul li a:hover{
+        background-color: red;
+       }
+       .nav ul:hover{
+        background-color:blue ;
+       }
+    </style>
+</head>
+<body>
+   <div class="header">
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Department</a></li>
+            <li><a href="#">ContactUs</a></li>
+        </ul>
+    </div>
+   </div>
+   </body>
+</html>

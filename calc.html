@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <input type=""name=""id="display" readonly><br>
+    <button onclick="display(0)">0</button>
+    <button onclick="display(1)">1</button>
+    <button onclick="display(2)">2</button>
+    <button onclick="display(3)">3</button><br>
+    <button onclick="display(4)">4</button>
+    <button onclick="display(5)">5</button>
+    <button onclick="display(6)">6</button>
+    <button onclick="display(7)">7</button><br>
+    <button onclick="display(8)">8</button>
+    <button onclick="display(9)">9</button>
+    <button onclick="display('+')">+</button>
+    <button onclick="display('-')">-</button><br>
+    <button onclick="dispaly('*')">*</button>
+    <button onclick="display('/')">/</button>
+    <button onclick="clears()">cs</button>
+    <button onclick="equalto()">=</button>
+<script>
+    function display(x){
+document.getElementById("display").value+=x;
+    }
+    function clears(){
+        document.getElementById("display").value="";
+    }
+    function equalto(){
+        let data = document.getElementById("display").value;
+        let result=eval(data);
+         document.getElementById("display").value=result;
+        // data = result;
+    }
+</script>
+</body>
+</html>

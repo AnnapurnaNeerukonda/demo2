@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API </title>
+</head>
+<body>
+   <h2> JSN PLACEHOLDER </h2>
+   <button onclick="fetchData()">submit</button>
+   <table border="1">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>username</th>
+            <th>email</th>
+            <!-- <td>phone</td> -->
+            <!-- <td>website</td> -->
+            <!-- <td>bs</td> -->
+        </tr>
+    </thead>
+    <tbody id="dataBody">
+    </tbody>
+   </table>
+</body>
+<script>
+    function fetchData(){
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => {
+        displayTable(data);
+    });
+    }
+    function displayTable(data)
+    {
+        const tableBody = document.getElementById('dataBody');
+        data.forEach(post => {
+            const row = tableBody.insertRow();
+            row.insertCell(0).textContent=post.id;
+            row.insertCell(1).textContent=post.name;
+            row.insertCell(2).textContent=post.username;
+            row.insertCell(3).textContent=post.email;
+            // row.insertCell(4).textContent=post.phone;
+            // row.insertCell(5).textContent=post.website;
+            // row.insertCell(6).textContent=post.bs;
+        });
+    }
+</script>

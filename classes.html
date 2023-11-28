@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 5</title>
+    <style>
+        .abc::first-letter{
+            height: 30px;
+            width: 20px;
+            font-weight: 100px;
+            font-style: normal;
+            color: blue;
+        }
+        #abcd::first-line{
+            color: aquamarine;
+            background-color: blueviolet;
+            width: 10px;
+            height: 40px;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: larger;
+            border: 50px;
+        }
+        #a::selection{
+            color: darkblue;
+        }
+        #dh::selection{
+            color:cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <p class="abc">Lorem ipsum dolor sit amet.</p>
+    <a href="http://127.0.0.1:5500/exp4.html" id="a">EXPERIMENT4</a><br>
+    <p id="dh">Lorem, ipsum.</p><br>
+    <p id="abcd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, <br>tenetur odio reiciendis ad deserunt sapiente dicta modi,<br> possimus iste sequi nisi, enim assumenda ut obcaecati?</p>
+</body>
+</html>

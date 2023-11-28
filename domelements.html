@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ELEMENTS</title>
+</head>
+<body>
+    <p id="demo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, est!</p>
+    <h2 class="demo2">WELCOME TO JAVASCRIPT</h2>
+    <h3>SCRIPT</h3>
+    <h5>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ul>
+    </h5>
+    <button onclick="changeText()">Click Me</button>
+    <p id="demo5" onmouseover="display()">this is sample text</p>
+    <script>
+        console.log(document.getElementById('demo1'))
+        console.log(document.getElementByClass('dmeoo2'))
+        console.log(doucument.querySelector("ul"))
+        console.log(document.quesrySelectorAll("h5"))
+        function changeText()
+        {
+            console.log(document.getElementById("demo5").innerHTML="Text Changed")
+        }
+        function display()
+        {
+            alert("this is a message")
+        }
+    </script>
+</body>
+</html>

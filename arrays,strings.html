@@ -1,0 +1,45 @@
+
+<html>
+<title>
+DOCUMENT
+</title>
+<body>
+<label>Length of the string is : </label>
+<p id="len"></p>
+<label>String in lower case:</label>
+<p id="low"></p>
+<label>Concetenated string</label>
+<p id ="con"></p>
+<label>Sliced String</label>
+<p id="sli"></p>
+<label>Replaced String</label>
+<p id="repl"></p>
+<label>Adding last to the array : </label>
+<p id="demo1"></p>
+<label>Adding first to the array : </label>
+<p id="demo2"></p>
+<label>deleting last to the array : </label>
+<p id="demo3"></p>
+<label>deleting first to the array : </label>
+<p id="demo4"></p>
+<script>
+let str="RAM";
+let str1="Jahnavi";
+let str2="Korapati";
+let str3=str1.concat(" ",str2);
+document.getElementById("len").innerHTML=str.length;
+document.getElementById("low").innerHTML=str.toLowerCase();
+document.getElementById("con").innerHTML=str3;
+document.getElementById("sli").innerHTML=str.slice(0,4);
+document.getElementById("repl").innerHTML=str.replace("RAM","RAVI");
+let numbers=[1,2,3,4,5];
+document.getElementById("demo1").innerHTML=numbers.push(6);
+document.getElementById("demo2").innerHTML=numbers.unshift(0);
+document.getElementById("demo3").innerHTML=numbers.pop(6);
+document.getElementById("demo4").innerHTML=numbers.shift(3);
+
+</script>
+</body>
+</html>
+
+

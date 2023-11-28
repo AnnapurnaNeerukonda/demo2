@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in javascript</title>
+</head>
+<body>
+    <pre>
+        1.Addition
+        2.Subtraction
+        3.Multiplication
+        4.Division
+        5.Modulus
+    </pre>
+    <p id="demo1">
+        <script>
+            function msg(){
+                alert("hello,this a message");
+            }
+            function add()
+            {
+                var sum=(a+b);
+                alert(sum);
+            }
+            function sub()
+            {
+                var diff=(a-b);
+                alert(diff);
+            }
+            function mul()
+            {
+                var pro=(a*b);
+                alert(pro);
+            }
+            function division()
+            {
+                var div =(a/b);
+                alert(div);
+            }
+            function modulus()
+            {
+                var mod=(a%b);
+                alert(mod);
+            }
+            var op =parseInt(prompt("enter choice"));
+            var a = parseInt(prompt("enter a value"));
+            var b = parseInt(prompt("enter b value"));
+            switch(op)
+            {
+                case 1:add();
+                break;
+                case 2:sub()
+                break;
+                case 3:mul();
+                break;
+                case 4:division();
+                break;
+                case 5:modulus();
+                break;
+                case 6:alert("invalid choice");
+                break;
+            }
+        </script>
+    </p>
+    <input type="button" onclick="msg()" value="call function">
+    <input type="button"onclick="add()" value ="addition">
+    <input type="button" onclick="sub()" value="subtraction">
+    <input type="button" onclick="mul()" value="multiplication">
+    <input type="button" onclick="division()" value="divison">
+    <input type="button" onclick="modulus()" value="remainder">
+</body>
+</html>
